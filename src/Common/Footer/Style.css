@@ -1,0 +1,43 @@
+footer {
+  background-color: #f6fbf4;
+  padding: 90px 0;
+  color: #0f3460;
+}
+/* .foot_box {
+  margin-right: 10px;
+} */
+
+footer h1 {
+  margin-bottom: 30px;
+  color: #e94560;
+  font-weight: 800;
+  font-style: italic;
+}
+footer .img {
+  background-color: transparent;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+footer .img .G-play {
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  color: #34a853;
+  margin: 5px;
+}
+footer .img span {
+  margin-top: 5px;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+footer h2 {
+  margin-bottom: 20px;
+}
+footer li {
+  margin-bottom: 10px;
+  opacity: 0.5;
+}

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaUserAlt } from "react-icons/fa";
+import "./style.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -13,9 +15,11 @@ const Login = () => {
 
   return (
     <>
-      <section>
+      <section className="main_section">
         <h2>Login Part</h2>
-        <div className="container">
+        <FaUserAlt className="man_icon" />
+        <div className="line"></div>
+        <div className="container main_part">
           <form action="" onSubmit={onSubmit}>
             <div>
               <label htmlFor="email">Email</label>
@@ -29,7 +33,7 @@ const Login = () => {
               />
             </div>
             <div>
-              <label htmlFor="password">Email</label>
+              <label htmlFor="password">Password</label>
               <input
                 type="password"
                 name="password"
@@ -39,7 +43,9 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button type="submit">Submit</button>
+            <button className="sub_add" type="submit">
+              Submit
+            </button>
           </form>
         </div>
         <div className="result">

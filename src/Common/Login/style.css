@@ -1,0 +1,49 @@
+.main_section {
+  background-color: #c6dce4;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-family: "Titan One", cursive;
+  color: #f15412;
+}
+
+.main_part {
+  width: 480px;
+  height: 300px;
+  background-color: #9cb4cc;
+  padding: 20px;
+  text-align: left;
+  border-radius: 7px;
+}
+.man_icon {
+  font-size: 80px;
+  background-color: #f0ebe3;
+  color: #1f4690;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+form input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: larger;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid #faf0d7;
+  resize: none;
+}
+label {
+  color: #faf0d7;
+  font-size: 20px;
+}
+.sub_add {
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: green;
+  color: black;
+  font-weight: 400;
+}

@@ -9,12 +9,26 @@ import Sdata from "./Components/Shop/ShopData";
 import Footer from "./Common/Footer/Footer";
 import Contact from "./Common/ContactUs/Contact";
 import Login from "./Common/Login/Login";
+import AllProduct from "./Common/AllProduct/AllProduct";
+import AllData from "./Components/AllProductData";
 
 function App() {
   const { productItems } = Data;
   const { shopItems } = Sdata;
-
   const [cartItem, setCardItem] = useState([]);
+  const { AllproductItems } = AllData;
+
+  const [menuItem, setMenuItem] = useState(AllproductItems);
+  const filteritem = (categoryO) => {
+    if (categoryO === "all") {
+      setMenuItem(AllproductItems);
+      return;
+    }
+    const fitlercate = AllproductItems.filter(
+      (item) => item.category === categoryO
+    );
+    setMenuItem(fitlercate);
+  };
 
   const addToCart = (product) => {
     const productExit = cartItem.find((item) => item.id === product.id);
@@ -72,6 +86,13 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login />
+          </Route>
+          <Route exact path="/allproduct">
+            <AllProduct
+              menuItem={menuItem}
+              filteritem={filteritem}
+              addToCart={addToCart}
+            />
           </Route>
         </Switch>
 

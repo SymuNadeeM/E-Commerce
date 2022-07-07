@@ -1,0 +1,108 @@
+/* ........product........ */
+.allproduct {
+  background: #fff;
+  width: 275px;
+  height: 335px;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+  margin: 10px;
+}
+.allproduct img {
+  height: 200px;
+  width: 200px;
+}
+.allproduct .img_h img {
+  padding: 10px;
+}
+.allproduct h3 {
+  font-weight: 400;
+  font-size: 17px;
+}
+.allproduct .rate .star {
+  font-size: 15px;
+  color: #ffcd4e;
+  margin: 5px 5px 5px 0;
+}
+.allproduct .price {
+  display: flex;
+  justify-content: space-between;
+  color: #e94560;
+}
+.price button {
+  background: none;
+  color: #e94560;
+  font-size: 20px;
+  transition: 0.5s;
+  border: 1px solid rgb(3 0 71 / 9%);
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.price button:hover {
+  cursor: pointer;
+  background-color: #e94560;
+  color: #fff;
+}
+.product-like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.product-like label {
+  background-color: #0f3460;
+  padding: 1px 10px;
+  font-size: 12px;
+  color: white;
+  border-radius: 50px;
+}
+.heart_btn {
+  font-size: 20px;
+  margin: 10px 3px;
+  color: #e94560;
+  transform: 0.5s;
+}
+.heart_btn:hover {
+  font-size: 23px;
+  transform: 0.5s;
+}
+.product:hover .product-like {
+  opacity: 1;
+}
+
+/* Categories */
+
+.allcategory {
+  padding: 30px;
+  height: 100%;
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+  background-color: #fff;
+  width: 23%;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.allcategory .box {
+  background-color: #daeaf1;
+  margin: 15px;
+  font-size: 22px;
+  padding: 5px 10px;
+  text-align: center;
+  transition: 0.5s;
+  color: black;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.allcategory .box:hover {
+  background-color: #fff;
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+}
+.allcategory .box button {
+  background-color: none;
+}

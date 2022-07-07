@@ -3,7 +3,7 @@ import shopic2 from "../../images/shop/two.png";
 import shopic3 from "../../images/shop/sony.png";
 import shopic4 from "../../images/shop/apple-iphone-x-new-2.png";
 import shopic5 from "../../images/shop/fiv.png";
-// import shopic6 from "../../images/shop/six.png";
+
 import shopic7 from "../../images/shop/sev.png";
 import shopic8 from "../../images/shop/eight.png";
 import shopic9 from "../../images/shop/nine.png";

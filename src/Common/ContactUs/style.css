@@ -7,7 +7,7 @@
   font-size: 28px;
   font-family: "Titan One", cursive;
   padding: 10px;
-  margin-bottom: 7px;
+
   color: #f15412;
 }
 .contact_container {
@@ -19,24 +19,24 @@
 .contact_options {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  margin-bottom: 8px;
+  gap: 0.5rem;
 }
 .contact_option {
   background: #9ba3eb;
-  padding: 1.2rem;
+  padding: 0.3rem;
   border-radius: 1.2rem;
   text-align: center;
   color: black;
   border: 1px solid transparent;
-  transition: var(--transition);
 }
 .contact_option:hover {
   background: transparent;
-  border-color: #ec9b3b;
+  border-color: #faf0d7;
 }
 .conta_icons {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
   color: #ff5d5d;
 }
 .contact_option h4 {
@@ -49,11 +49,11 @@
   font-weight: 600;
 }
 .contact_option a {
-  margin-top: 0.7rem;
+  margin-top: 0.2rem;
   display: inline-block;
   text-decoration: none;
   font-size: 0.8rem;
-  color: #ecb390;
+  color: #fff;
 }
 
 /* form start */
@@ -66,7 +66,7 @@ form {
 form input,
 textarea {
   width: 100%;
-  padding: 1.5rem;
+  padding: 1.8rem;
   border-radius: 0.5rem;
   background: transparent;
   border: 2px solid #faf0d7;

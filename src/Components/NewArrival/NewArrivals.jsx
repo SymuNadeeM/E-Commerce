@@ -1,7 +1,9 @@
 import React from "react";
 import NewCart from "./NewCart";
 import "./Style.css";
+import { BiRightArrow } from "react-icons/bi";
 import { MdOutlineWbSunny } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const NewArrivals = () => {
   return (
@@ -14,7 +16,10 @@ const NewArrivals = () => {
               <h2>New Arrivals </h2>
             </div>
             <div className="heading-right row ">
-              <span>View all</span>
+              <p>View all</p>
+              <Link to="/allproduct">
+                <BiRightArrow className="icon_arrow" />
+              </Link>
             </div>
           </div>
 

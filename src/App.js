@@ -18,6 +18,7 @@ function App() {
   const [cartItem, setCardItem] = useState([]);
   const { AllproductItems } = AllData;
 
+  // All Product categories selector
   const [menuItem, setMenuItem] = useState(AllproductItems);
   const filteritem = (categoryO) => {
     if (categoryO === "all") {
@@ -29,6 +30,7 @@ function App() {
     );
     setMenuItem(fitlercate);
   };
+  // .....................................................
 
   const addToCart = (product) => {
     const productExit = cartItem.find((item) => item.id === product.id);
@@ -44,6 +46,7 @@ function App() {
     } else {
       setCardItem([...cartItem, { ...product, qty: 1 }]);
     }
+    // setCardItem([...cartItem, { ...product}]);
   };
 
   //Decrement Items:

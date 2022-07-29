@@ -1,6 +1,8 @@
 import React from "react";
 import { TbDiscount } from "react-icons/tb";
+import {BiRightArrow} from "react-icons/bi"
 import DisCard from "./DisCard";
+import { Link } from "react-router-dom";
 
 const Discount = () => {
   return (
@@ -13,7 +15,10 @@ const Discount = () => {
               <h2>Big Discounts</h2>
             </div>
             <div className="heading-right row ">
-              <span>View all</span>
+            <p>View all</p>
+              <Link to="/allproduct">
+                <BiRightArrow className="icon_arrow" />
+              </Link>
             </div>
           </div>
           <DisCard />

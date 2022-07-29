@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import CategoriesSh from "./CategoriesSh";
+import { Link } from "react-router-dom";
+import { BiRightArrow } from "react-icons/bi";
 import ShopCart from "./ShopCart";
 const Shop = ({ addToCart, shopItems }) => {
   return (
@@ -15,7 +17,10 @@ const Shop = ({ addToCart, shopItems }) => {
                 <h2>Mobile Phones</h2>
               </div>
               <div className="heading-right row ">
-                <span>View all</span>
+                <p>View all</p>
+                <Link to="/allproduct">
+                  <BiRightArrow className="icon_arrow" />
+                </Link>
               </div>
             </div>
             <div className="product-content  grid1">

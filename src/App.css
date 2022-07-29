@@ -207,9 +207,20 @@ button {
 }
 
 .heading .heading-right {
+  display: flex;
   text-align: right;
   color: grey;
 }
+
+.icon_arrow {
+  margin-top: 4px;
+  color: #0f3460;
+}
+.icon_arrow:hover {
+  color: grey;
+  transition: 0.3s;
+}
+
 /*----- control btn -------*/
 .control-btn .next,
 .control-btn .prev {

@@ -1,8 +1,9 @@
 import React from "react";
 import TopCart from "./TopCart";
-import { BiCategory } from "react-icons/bi";
+import { BiCategory, BiRightArrow } from "react-icons/bi";
 
 import "./Style.css";
+import { Link } from "react-router-dom";
 
 const TopCategori = () => {
   return (
@@ -15,7 +16,10 @@ const TopCategori = () => {
               <h2>Top Categories</h2>
             </div>
             <div className="heading-right row">
-              <span>View all</span>
+              <p>View all</p>
+              <Link to="/allproduct">
+                <BiRightArrow className="icon_arrow" />
+              </Link>
             </div>
           </div>
           <TopCart />
